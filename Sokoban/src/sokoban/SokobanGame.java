@@ -6,12 +6,9 @@
 package sokoban;
 
 
-import java.awt.event.ActionEvent;
+
 import javax.swing.JFrame; 
 import javax.swing.JComponent; 
-import javax.swing.JButton; 
-import javax.swing.JPanel; 
-import java.util.Scanner;
 import java.io.*;
 
 

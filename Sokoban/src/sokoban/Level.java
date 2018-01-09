@@ -4,6 +4,9 @@
  * and open the template in the editor.
  */
 package sokoban;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
 /**
  *
@@ -11,4 +14,9 @@ package sokoban;
  */
 public class Level {
     
-}
+    public Level() throws FileNotFoundException{
+    Scanner map = new Scanner(new File("Resources\\level1.txt"));
+    while (map.hasNext()){
+    String str = map.nextLine();
+    System.out.println(str);  } 
+}}

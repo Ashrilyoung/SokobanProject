@@ -8,12 +8,10 @@ package sokoban;
  
 import javax.swing.JButton; 
 import javax.swing.JPanel; 
-import javax.swing.JComponent; 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Scanner;
+import java.util.logging.Logger;
  
 
 /**
@@ -37,21 +35,36 @@ public class StartMenu extends JPanel implements ActionListener{
         startButton.setVisible(true);
         add(startButton);
 
-
+        startButton.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent ae)
+            {
+                try {
+                    new Level();
+                } catch (FileNotFoundException ex) {
+                    Logger.getLogger(StartMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+                }
+                
+            }
+        });
+        
         
         JButton exitButton = new JButton("Exit Game");
         exitButton.setBounds(300,50,200, 50); 
         exitButton.setVisible(true);
         add(exitButton);
+
+        exitButton.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent ae)
+            {
+             System.exit(0);
+            }
+        });
         
-        
-        Scanner map = new Scanner(new File("Resources\\level1.txt"));
-        while (map.hasNext()){
-        String str = map.nextLine();
-        System.out.println(str);  } 
     //contents of start menu
- 
-       
+    
+
 }
 
     @Override
