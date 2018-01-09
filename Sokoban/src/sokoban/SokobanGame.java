@@ -5,10 +5,44 @@
  */
 package sokoban;
 
+
+import java.awt.event.ActionEvent;
+import javax.swing.JFrame; 
+import javax.swing.JComponent; 
+import javax.swing.JButton; 
+import javax.swing.JPanel; 
+import java.util.Scanner;
+import java.io.*;
+
+
+
 /**
  *
  * @author 16007873
  */
-public class SokobanGame {
+public class SokobanGame extends JComponent{
     
-}
+    SokobanGame() throws FileNotFoundException{
+    
+     JFrame frame=new JFrame();  
+    
+     frame.getContentPane().add(new StartMenu());
+
+     frame.setSize(600,600);     // Setting Frame size. This is the window size
+        
+     frame.setLayout(null);      // We don't want the default layout manager to be used as we are
+                                    // providing a custom layout using our setBounds calls above.  
+     frame.setVisible(true);  
+     
+     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    
+      
+    
+
+     
+    
+}}
+
+
+
+
