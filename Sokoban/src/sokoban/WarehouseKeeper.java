@@ -9,6 +9,11 @@ package sokoban;
  *
  * @author 16007873
  */
-public class WarehouseKeeper {
+public class WarehouseKeeper extends MapElement{
+ 
+            public WarehouseKeeper()
+    {
+        super("Resources\\WareHouseKeeper.png");
+    }
     
 }

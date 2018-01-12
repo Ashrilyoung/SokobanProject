@@ -9,6 +9,10 @@ package sokoban;
  *
  * @author 16007873
  */
-public class Wall {
+public class Wall extends MapElement{
     
+            public Wall()
+    {
+        super("Resources\\Wall.png");
+    }
 }

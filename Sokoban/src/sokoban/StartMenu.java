@@ -12,6 +12,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
 import java.util.logging.Logger;
+import static sokoban.SokobanGame.levelno;
  
 
 /**
@@ -26,11 +27,13 @@ public class StartMenu extends JPanel implements ActionListener{
         
         
      //intended to be contents of start menu
-        setBounds(0,0,600, 600);
+        setBounds(0,0,600, 60);
         setVisible(true);
-     
+       
         
-        JButton startButton = new JButton("Start Game");
+
+        
+        JButton startButton = new JButton("Next Level");
         startButton.setBounds(50,50,200, 50); 
         startButton.setVisible(true);
         add(startButton);
@@ -39,8 +42,12 @@ public class StartMenu extends JPanel implements ActionListener{
         {
             public void actionPerformed(ActionEvent ae)
             {
+                if (levelno >= 1 && levelno <=5){
+                levelno = levelno + 1;}
+                else levelno = 1;
                 try {
                     new Level();
+                    
                 } catch (FileNotFoundException ex) {
                     Logger.getLogger(StartMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
                 }
@@ -60,10 +67,12 @@ public class StartMenu extends JPanel implements ActionListener{
             {
              System.exit(0);
             }
-        });
+        }
+        
+        );
         
     //contents of start menu
-    
+
 
 }
 
@@ -73,7 +82,7 @@ public class StartMenu extends JPanel implements ActionListener{
         // In this overridden (that's an important word in OOP) method of
         // ActionListener we are just telling the object to make itself visible.
         
-        this.setVisible(true); 
+       
         
   
     }

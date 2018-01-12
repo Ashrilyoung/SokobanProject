@@ -5,10 +5,20 @@
  */
 package sokoban;
 
+
+
+
 /**
  *
  * @author 16007873
  */
-public class Floor {
-    
-}
+public class Floor extends MapElement{
+
+        public Floor()
+    {
+        super("Resources\\Floor.png");
+    }
+          
+    }
+
+

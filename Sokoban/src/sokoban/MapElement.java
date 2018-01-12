@@ -5,10 +5,50 @@
  */
 package sokoban;
 
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import javax.imageio.ImageIO;
+import javax.swing.JPanel;
+
 /**
  *
  * @author 16007873
  */
-public class MapElement {
+public class MapElement extends JPanel{
     
-}
+   
+    private BufferedImage image;
+
+    public MapElement(String Filepath) {
+
+    
+         try 
+       {                
+          image = ImageIO.read(new File(Filepath));
+          
+       } 
+       catch (IOException ex) 
+       {
+           System.out.println("Exception thrown in ImagePanel: " + ex.getMessage());
+       }
+       
+       
+    }
+      
+       
+    @Override
+    public void paint (Graphics g)
+    {
+       super.paintComponent(g);
+       g.drawImage(image, 0, 0, this);
+      
+    }  
+    
+       
+       
+    }
+    
+
+

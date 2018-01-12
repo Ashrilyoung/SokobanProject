@@ -9,6 +9,10 @@ package sokoban;
  *
  * @author 16007873
  */
-public class Crate {
-    
+public class Crate extends MapElement{
+   
+    public Crate()
+    {
+        super("Resources\\Crate.png");
+    }
 }

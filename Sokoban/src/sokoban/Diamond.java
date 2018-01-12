@@ -9,6 +9,11 @@ package sokoban;
  *
  * @author 16007873
  */
-public class Diamond {
+public class Diamond extends MapElement{
+    
+            public Diamond()
+    {
+        super("Resources\\Diamond.png");
+    }
     
 }
