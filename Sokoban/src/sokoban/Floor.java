@@ -18,7 +18,7 @@ public class Floor extends MapElement{
     {
         super("Resources\\Floor.png");
     }
-          
+        
     }
 
 

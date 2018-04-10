@@ -5,7 +5,7 @@
             <url>src/sokoban/SokobanGame.java</url>
             <bookmark id="1">
                 <name/>
-                <line>52</line>
+                <line>48</line>
                 <key/>
             </bookmark>
         </file>
@@ -14,13 +14,9 @@
         <group>
             <file>file:/E:/HND%20Work/Semester%201/Object%20Orientated%20Programing/Sokoban%20Assessment/Sokoban/src/sokoban/Sokoban.java</file>
             <file>file:/E:/HND%20Work/Semester%201/Object%20Orientated%20Programing/Sokoban%20Assessment/Sokoban/src/sokoban/MoveableMapElement.java</file>
-            <file>file:/E:/HND%20Work/Semester%201/Object%20Orientated%20Programing/Sokoban%20Assessment/Sokoban/src/sokoban/Crate.java</file>
-            <file>file:/E:/HND%20Work/Semester%201/Object%20Orientated%20Programing/Sokoban%20Assessment/Sokoban/src/sokoban/Wall.java</file>
             <file>file:/E:/HND%20Work/Semester%201/Object%20Orientated%20Programing/Sokoban%20Assessment/Sokoban/src/sokoban/MapElement.java</file>
-            <file>file:/E:/HND%20Work/Semester%201/Object%20Orientated%20Programing/Sokoban%20Assessment/Sokoban/src/sokoban/Diamond.java</file>
             <file>file:/E:/HND%20Work/Semester%201/Object%20Orientated%20Programing/Sokoban%20Assessment/Sokoban/src/sokoban/StartMenu.java</file>
             <file>file:/E:/HND%20Work/Semester%201/Object%20Orientated%20Programing/Sokoban%20Assessment/Sokoban/src/sokoban/Coordinate.java</file>
-            <file>file:/E:/HND%20Work/Semester%201/Object%20Orientated%20Programing/Sokoban%20Assessment/Sokoban/src/sokoban/WarehouseKeeper.java</file>
             <file>file:/E:/HND%20Work/Semester%201/Object%20Orientated%20Programing/Sokoban%20Assessment/Sokoban/src/sokoban/SokobanGame.java</file>
             <file>file:/E:/HND%20Work/Semester%201/Object%20Orientated%20Programing/Sokoban%20Assessment/Sokoban/src/sokoban/Level.java</file>
             <file>file:/E:/HND%20Work/Semester%201/Object%20Orientated%20Programing/Sokoban%20Assessment/Sokoban/src/sokoban/Floor.java</file>

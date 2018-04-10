@@ -10,6 +10,8 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 /**
@@ -19,21 +21,27 @@ import javax.swing.JPanel;
 public class MapElement extends JPanel{
     
    
-    private BufferedImage image;
+    private BufferedImage image;           //allows an image to be read and stored
+    
 
-    public MapElement(String Filepath) {
+    
 
+    public MapElement(String Filepath) {            //filepath will be filled in by calling in a class that inherits from this class
+           
+        
     
          try 
        {                
-          image = ImageIO.read(new File(Filepath));
+          image = ImageIO.read(new File(Filepath));                 //load image with this filepath
+         
           
        } 
        catch (IOException ex) 
        {
-           System.out.println("Exception thrown in ImagePanel: " + ex.getMessage());
+           System.out.println("Exception thrown in ImagePanel: " + ex.getMessage());    //if no image found display error
        }
-       
+       validate();
+       repaint();
        
     }
       
@@ -41,8 +49,11 @@ public class MapElement extends JPanel{
     @Override
     public void paint (Graphics g)
     {
-       super.paintComponent(g);
-       g.drawImage(image, 0, 0, this);
+       super.paintComponent(g);                                    //override graphics class 
+       g.drawImage(image, 0,0, this);
+       
+
+      
       
     }  
     

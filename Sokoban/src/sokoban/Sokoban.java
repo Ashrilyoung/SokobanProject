@@ -19,6 +19,7 @@ public class Sokoban {
     public static void main(String[] args) throws FileNotFoundException {
         
          new SokobanGame();
+          
         
     
          

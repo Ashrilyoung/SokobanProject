@@ -5,6 +5,8 @@
  */
 package sokoban;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author 16007873
@@ -13,6 +15,7 @@ public class Crate extends MapElement{
    
     public Crate()
     {
-        super("Resources\\Crate.png");
+        super("Resources\\Crate.png");     //crate image location
+
     }
 }

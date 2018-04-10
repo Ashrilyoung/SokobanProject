@@ -19,73 +19,55 @@ import static sokoban.SokobanGame.levelno;
  *
  * @author 16007873
  */
-public class StartMenu extends JPanel implements ActionListener{
+public class StartMenu extends JPanel{
     
      
     
-    public StartMenu() throws FileNotFoundException{
+    public StartMenu(SokobanGame menuAction) throws FileNotFoundException{
         
         
      //intended to be contents of start menu
-        setBounds(0,0,600, 60);
+        setBounds(0,0,600, 60);                //size of start menu
         setVisible(true);
        
-        
 
-        
-        JButton startButton = new JButton("Next Level");
+        JButton startButton = new JButton("Next Level");      //button saying Next Level which starts game
         startButton.setBounds(50,50,200, 50); 
         startButton.setVisible(true);
         add(startButton);
-
-        startButton.addActionListener(new ActionListener()
-        {
-            public void actionPerformed(ActionEvent ae)
-            {
-                if (levelno >= 1 && levelno <=5){
-                levelno = levelno + 1;}
-                else levelno = 1;
-                try {
-                    new Level();
-                    
-                } catch (FileNotFoundException ex) {
-                    Logger.getLogger(StartMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-                }
-                
-            }
-        });
+        
+        startButton.addActionListener(menuAction);
+       
         
         
-        JButton exitButton = new JButton("Exit Game");
+        JButton exitButton = new JButton("Exit Game");          //button saying Exit Game
         exitButton.setBounds(300,50,200, 50); 
         exitButton.setVisible(true);
         add(exitButton);
 
+        
+            
+            
         exitButton.addActionListener(new ActionListener()
         {
+            @Override
             public void actionPerformed(ActionEvent ae)
             {
-             System.exit(0);
+             System.exit(0);                                   // When exit game button clicked exit the program
             }
-        }
+        });
+
         
-        );
+
+        revalidate();
+        repaint();
         
     //contents of start menu
 
 
 }
 
-    @Override
-    public void actionPerformed(ActionEvent ae)
-    {
-        // In this overridden (that's an important word in OOP) method of
-        // ActionListener we are just telling the object to make itself visible.
-        
-       
-        
-  
-    }
+
 
 
 
