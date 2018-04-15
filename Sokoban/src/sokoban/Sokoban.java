@@ -17,13 +17,9 @@ public class Sokoban {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws FileNotFoundException {
-        
-         new SokobanGame();
-          
-        
-    
-         
-        // TODO code application logic here
+
+        SokobanGame s = new SokobanGame();
+
     }
-    
+
 }

@@ -13,7 +13,7 @@ public class Diamond extends MapElement{
     
             public Diamond()
     {
-        super("Resources\\Diamond.png");
+        super("Resources\\Diamond.png");    //image location
     }
     
 }

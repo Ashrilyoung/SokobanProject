@@ -13,6 +13,6 @@ public class Wall extends MapElement{
     
             public Wall()
     {
-        super("Resources\\Wall.png");
+        super("Resources\\Wall.png");   //image location
     }
 }

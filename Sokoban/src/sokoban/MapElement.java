@@ -5,6 +5,7 @@
  */
 package sokoban;
 
+import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -31,7 +32,8 @@ public class MapElement extends JPanel{
         
     
          try 
-       {                
+       {   
+           
           image = ImageIO.read(new File(Filepath));                 //load image with this filepath
          
           
@@ -51,7 +53,6 @@ public class MapElement extends JPanel{
     {
        super.paintComponent(g);                                    //override graphics class 
        g.drawImage(image, 0,0, this);
-       
 
       
       
